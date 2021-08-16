@@ -4,9 +4,10 @@ RUN mkdir -p /web
 WORKDIR /web
 RUN apk update && apk upgrade
 RUN apk add git 
-RUN npm install
+COPY package.json yarn.lock   ./web/
+RUN yarn install
 COPY .  /web/
-RUN npm run build 
+RUN yarn build 
 
 EXPOSE 5000
 ENV NUXT=0.0.0.0
