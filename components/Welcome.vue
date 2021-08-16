@@ -1,7 +1,7 @@
 <template>
     <div class="flex justify-between items-center">
         <div>
-          <h1 class="font-bold text-4xl text-welcome">Welcome intusiaste!</h1>
+          <h1 class="font-bold text-4xl text-welcome">Welcome enthusiastic!</h1>
           <p class="text-2xl">
             Daniel Sarmiento FullStack developer.
           </p>
