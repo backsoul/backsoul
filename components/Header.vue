@@ -1,14 +1,13 @@
 <template>
 
-  <div class="flex justify-between my-10 mx-10 font-semibold text-xl tracking-wide">
+  <div class="flex justify-between mt-10 mx-10 font-semibold text-xl tracking-wide">
     <div class="grid grid-cols-3 gap-5">
-      <a href="" class="hover:text-orange">Sobre mi</a>
-      <a href="" class="hover:text-orange">Servicios</a>
+    <NuxtLink to="about" class="hover:text-orange">Sobre mi</NuxtLink>
+    <NuxtLink to="services" class="hover:text-orange">Trabajos</NuxtLink>
       <a href="" class="hover:text-orange">Contactame</a>
     </div>
     <div>
-      <a href="">Portafolio
-      </a>
+     <NuxtLink to="/" class="hover:text-orange">Portafolio</NuxtLink>
     </div>
   </div>
 </template>

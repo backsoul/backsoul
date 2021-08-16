@@ -1,5 +1,5 @@
 <template>
-    <div class="flex justify-between items-center  mt-20">
+    <div class="flex justify-between items-center">
         <div>
           <h1 class="font-bold text-4xl text-welcome">Welcome intusiaste!</h1>
           <p class="text-2xl">
@@ -45,9 +45,7 @@ export default {
   animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 
-.image {
-  animation: float 5s infinite;
-}
+
 
 @keyframes typing {
   from {
@@ -66,6 +64,10 @@ export default {
   50% {
     border-color: orange;
   }
+}
+
+.image {
+  animation: float 5s infinite;
 }
 
 @keyframes float {
