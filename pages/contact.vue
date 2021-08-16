@@ -12,32 +12,62 @@
         method="POST"
         class="flex flex-col justify-center items-center"
       >
+        {{ name }}
         <label class="font-extrabold text-1xl mb-2">Nombre</label>
         <input
           type="text"
-          v-model="name"
+          model="name"
           placeholder="Ingresa tu nombre"
-          class="text-center p-2 border-2 border-opacity-90 border-black rounded-xl"
+          class="
+            text-center
+            p-2
+            border-2 border-opacity-90 border-black
+            rounded-xl
+          "
         />
-        <label class="font-extrabold text-1xl mt-5 mb-2">Correo electrónico</label>
+        <label class="font-extrabold text-1xl mt-5 mb-2"
+          >Correo electrónico</label
+        >
         <input
           type="email"
-          v-model="email"
+          model="email"
           placeholder="Ingresa tu email"
-          class="text-center p-2 border-2 border-opacity-90 border-black rounded-xl"
+          class="
+            text-center
+            p-2
+            border-2 border-opacity-90 border-black
+            rounded-xl
+          "
         />
         <label class="font-extrabold text-1xl mt-5 mb-2">Mensaje</label>
         <textarea
           name="message"
-          v-model="message"
+          model="message"
           cols="30"
           rows="5"
           placeholder="Hola!, me encantaría hablar contigo..."
-          class="text-center p-2 border-2 border-opacity-90 border-black rounded-xl"
+          class="
+            text-center
+            p-2
+            border-2 border-opacity-90 border-black
+            rounded-xl
+          "
         >
         </textarea>
 
-        <input type="submit" value="Enviar" class="hover:cursor-pointer px-24 py-3 rounded-xl bg-orange text-white mt-10"/>
+        <input
+          type="submit"
+          value="Enviar"
+          class="
+            hover:cursor-pointer
+            px-24
+            py-3
+            rounded-xl
+            bg-orange
+            text-white
+            mt-10
+          "
+        />
       </form>
     </div>
   </div>
@@ -71,9 +101,15 @@ export default {
         .then((data) => {
           this.$vs.notification({
             title: 'Documentation Vuesax 4.0+',
-            color: 'success',
+            color: '#ffa500',
             title: '¡Mensaje enviado!',
             text: 'El mensaje se ha enviado correctamente.',
+          })
+          this.name = ''
+          this.email = ''
+          this.message = ''
+          this.$router.push({
+            path: '/',
           })
         })
         .catch((err) => {
