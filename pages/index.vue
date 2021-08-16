@@ -1,7 +1,8 @@
 <template>
-  <div>
-    <Tutorial />
-    <h1>Hola!!</h1>
+  <div class="bg-red-500">
+     <vs-button>
+        Hello World Vuesax + Nuxtjs
+      </vs-button>
   </div>
 </template>
 
