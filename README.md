@@ -10,7 +10,7 @@
 ### 🤝🏻 &nbsp;Connect with Me
 
 <p align="center">
-<a href="https://linkedin.com/in/danielstevensarmiento"><img src="https://img.shields.io/badge/-Aditya%20Vikram%20Singh-0077B5?style=flat&logo=Linkedin&logoColor=white"/></a>
+<a href="https://linkedin.com/in/danielstevensarmiento"><img src="https://img.shields.io/badge/-Daniel%Sarmiento%20?style=flat&logo=Linkedin&logoColor=white"/></a>
 </p>
 
 Last Edited on: 08/16/2021
