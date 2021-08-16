@@ -1,12 +1,12 @@
 <template>
-  <div class="flex flex-col justify-center items-center mt-20">
+  <div class="flex flex-col justify-center items-center mt-10">
     <div class="w-auto">
       <h1 class="font-bold text-3xl text-contact">
         Ideas,proyectos,trabajo etc...
       </h1>
     </div>
     <p class="text-1xl">¡enviame un correo si estas interesado!</p>
-    <div class="mt-20">
+    <div class="mt-5">
       <form
         v-on:submit.prevent="sendEmail"
         method="POST"

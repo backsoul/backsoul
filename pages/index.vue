@@ -1,7 +1,6 @@
 <template>
-  <div class="flex flex-col justify-center mt-20">
+  <div class="flex flex-col justify-center">
       <Welcome />
-      <Skills />
   </div>
 </template>
 
