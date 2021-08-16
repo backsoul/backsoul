@@ -12,11 +12,11 @@
         method="POST"
         class="flex flex-col justify-center items-center"
       >
-        {{ name }}
         <label class="font-extrabold text-1xl mb-2">Nombre</label>
         <input
           type="text"
-          model="name"
+          name="name"
+          v-model="name"
           placeholder="Ingresa tu nombre"
           class="
             text-center
@@ -30,7 +30,8 @@
         >
         <input
           type="email"
-          model="email"
+          name="email"
+          v-model="email"
           placeholder="Ingresa tu email"
           class="
             text-center
@@ -42,7 +43,7 @@
         <label class="font-extrabold text-1xl mt-5 mb-2">Mensaje</label>
         <textarea
           name="message"
-          model="message"
+          v-model="message"
           cols="30"
           rows="5"
           placeholder="Hola!, me encantaría hablar contigo..."
@@ -85,7 +86,6 @@ export default {
   },
   methods: {
     sendEmail(e) {
-      e.preventDefault()
       emailjs
         .sendForm(
           'my_web',
@@ -96,11 +96,11 @@ export default {
             name: this.name,
             email: this.email,
             message: this.message,
+            from_name: this.name,
           }
         )
-        .then((data) => {
+        .then(() => {
           this.$vs.notification({
-            title: 'Documentation Vuesax 4.0+',
             color: '#ffa500',
             title: '¡Mensaje enviado!',
             text: 'El mensaje se ha enviado correctamente.',
