@@ -7,6 +7,7 @@ module.exports = {
     },
     colors:{
       orange:'orange',
+      white:'white'
     }
   },
   variants: {

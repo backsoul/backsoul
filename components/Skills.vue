@@ -12,15 +12,15 @@
             fuertes son:
           </p>
           <div class="grid grid-cols-7 item-center gap-7 mt-10">
-            <a href="">
+            <a href="https://angular.io/" target="_blank"> 
               <svgicon
                 name="angular"
-                width="60"
+                width="50"
                 color="#fffff"
                 class="fill-current hover:text-orange hover:-translate-y-2  transform duration-500"
               ></svgicon>
             </a>
-             <a href="" class="mt-2">
+             <a href="https://nuxtjs.org/" class="mt-2" target="_blank">
               <svgicon
                 name="nuxt"
                 width="60"
@@ -28,7 +28,7 @@
                 class="fill-current hover:text-orange hover:-translate-y-2  transform duration-500"
               ></svgicon>
             </a>
-            <a href="">
+            <a href="https://ionicframework.com/" target="_blank">
               <svgicon
                 name="ionic"
                 width="60"
@@ -36,7 +36,7 @@
                 class="fill-current hover:text-orange hover:-translate-y-2  transform duration-500"
               ></svgicon>
             </a>
-             <a href="">
+             <a href="https://www.typescriptlang.org/" target="_blank">
               <svgicon
                 name="typescript"
                 width="60"
@@ -44,7 +44,7 @@
                 class="fill-current hover:text-orange hover:-translate-y-2  transform duration-500"
               ></svgicon>
             </a>
-             <a href="">
+             <a href="https://laravel.com/" target="_blank">
               <svgicon
                 name="laravel"
                 width="60"
@@ -52,7 +52,7 @@
                 class="fill-current hover:text-orange hover:-translate-y-2  transform duration-500"
               ></svgicon>
             </a>
-            <a href="">
+            <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank">
               <svgicon
                 name="javascript"
                 width="60"
@@ -60,7 +60,7 @@
                 class="fill-current hover:text-orange hover:-translate-y-2  transform duration-500"
               ></svgicon>
             </a>
-            <a href="">
+            <a href="https://www.python.org/" target="_blank">
               <svgicon
                 name="python"
                 width="60"

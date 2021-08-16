@@ -6,15 +6,15 @@
             Daniel Sarmiento FullStack developer.
           </p>
           <div class="mt-2 grid grid-cols-2 w-2/12 gap-5">
-            <a href="">
+            <a href="https://twitter.com/backsoul_" target="_blank">
               <svgicon
-                name="facebook"
+                name="twitter"
                 width="30"
                 color="#fffff"
                 class="fill-current hover:text-orange"
               ></svgicon>
             </a>
-            <a href="">
+            <a href="https://github.com/backsoul" target="_blank">
               <svgicon
                 name="github"
                 width="30"
