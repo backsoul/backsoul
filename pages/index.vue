@@ -1,67 +1,90 @@
 <template>
-  <div class="w-screen flex flex-row justify-center">
+  <div class="w-screen flex flex-row justify-center h-screen">
     <div class="w-9/12">
       <Header />
-      <div class="flex justify-between items-center mt-40">
-        <div>
-          <h1 class="font-bold text-4xl text-welcome">Welcome intusiaste!</h1>
-          <p>my name is Daniel Sarmiento aka backsoul in github.</p>
+      <Welcome />
+      <div class="mt-20 grid grid-cols-2">
+        <img :src="require(`~/assets/img/character-skills.png`)" />
+        <div class="flex justify-start flex-col items-center">
+          <h1 class="font-bold text-2xl">Motivación</h1>
+          <p class="mt-5 font-sm">
+            La programación la considero un arte, es por ello mantengo informado
+            de los últimos pinceles. Dejando a un lado las metáforas, me
+            considero una persona con un aprendizaje constante me divierte
+            aprender nuevas tecnologías por eso mi stack tech creció. Pero está
+            claro que aprender de todo y no especializarse esta mal, por eso mis
+            fuertes son:
+          </p>
+          <div class="grid grid-cols-7 item-center gap-7 mt-10">
+            <a href="">
+              <svgicon
+                name="angular"
+                width="60"
+                color="#fffff"
+                class="fill-current hover:text-orange hover:-translate-y-2  transform duration-500"
+              ></svgicon>
+            </a>
+             <a href="" class="mt-2">
+              <svgicon
+                name="nuxt"
+                width="60"
+                color="#fffff"
+                class="fill-current hover:text-orange hover:-translate-y-2  transform duration-500"
+              ></svgicon>
+            </a>
+            <a href="">
+              <svgicon
+                name="ionic"
+                width="60"
+                color="#fffff"
+                class="fill-current hover:text-orange hover:-translate-y-2  transform duration-500"
+              ></svgicon>
+            </a>
+             <a href="">
+              <svgicon
+                name="typescript"
+                width="60"
+                color="#fffff"
+                class="fill-current hover:text-orange hover:-translate-y-2  transform duration-500"
+              ></svgicon>
+            </a>
+             <a href="">
+              <svgicon
+                name="laravel"
+                width="60"
+                color="#fffff"
+                class="fill-current hover:text-orange hover:-translate-y-2  transform duration-500"
+              ></svgicon>
+            </a>
+            <a href="">
+              <svgicon
+                name="javascript"
+                width="60"
+                color="#fffff"
+                class="fill-current hover:text-orange hover:-translate-y-2  transform duration-500"
+              ></svgicon>
+            </a>
+            <a href="">
+              <svgicon
+                name="python"
+                width="60"
+                color="#fffff"
+                class="fill-current hover:text-orange hover:-translate-y-2  transform duration-500"
+              ></svgicon>
+            </a>
+          </div>
         </div>
-        <img :src="require(`~/assets/img/character-intro.png`)" class="image"/>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import '~/assets/icons'
+
 export default {
   layout: 'default',
 }
 </script>
 
-<style>
-.text-welcome {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: 0.15em; /* Adjust as needed */
-  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
-}
-
-.image{
-animation: float 5s infinite;
-}
-
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: orange;
-  }
-}
-
-@keyframes float {
-	0% {
-		transform: translatey(0px);
-	}
-	50% {
-		transform: translatey(-10px);
-	}
-	100% {
-		transform: translatey(0px);
-	}
-}
-</style>
+<style></style>
