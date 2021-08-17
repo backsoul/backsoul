@@ -5,9 +5,6 @@ services:
     container_name: web_nuxt
     build: .
     volumes: 
-      - .:/web
-      - ./node_modules:/web/node_modules
+      - /var/run/docker.sock:/tmp/docker.sock:ro
     ports: 
-      - "5000:5000"
-    environment: 
-      HOST: 0.0.0.0
+      - "80:80"
