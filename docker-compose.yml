@@ -4,7 +4,15 @@ services:
   web:
     container_name: web_nuxt
     build: .
-    volumes: 
+    volumes:
       - /var/run/docker.sock:/tmp/docker.sock:ro
-    ports: 
+    environment:
+      - VIRTUAL_HOST=backsoul.com.co
+
+  nginx-proxy:
+    image: jwilder/nginx-proxy
+    ports:
       - "80:80"
+    volumes:
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+
