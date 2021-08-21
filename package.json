@@ -8,13 +8,15 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "test": "jest",
-    "svg": "vsvg -s ./static/svg -t ./assets/icons"
+    "svg": "vsvg -s ./static/svg -t ./assets/icons",
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.13.6",
     "core-js": "^3.15.1",
     "emailjs-com": "^3.2.0",
-    "nuxt": "^2.15.7",
+    "nuxt": "^2.15.8",
+    "push-dir": "^0.4.1",
     "vue-svgicon": "^3.2.9",
     "vuesax": "^4.0.1-alpha.25"
   },
