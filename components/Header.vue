@@ -5,6 +5,8 @@
     <div class="grid grid-cols-3 gap-5">
       <NuxtLink to="/about" class="hover:text-orange hover:cursor-pointer ">Sobre mi</NuxtLink>
       <NuxtLink to="/contact" class="hover:text-orange hover:cursor-pointer ">Contactame</NuxtLink>
+      <a href="https://backsoul-doc.web.app/" class="hover:text-orange
+      hover:cursor-pointer">Documentación</a>
     </div>
     <div>
       <NuxtLink to="/" class="hover:text-orange hover:cursor-pointer ">Inicio</NuxtLink>
