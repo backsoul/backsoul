@@ -3,12 +3,13 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
-      sans: ['Open Sans']
+      sans: ['Open Sans'],
     },
-    colors:{
-      orange:'orange',
-      white:'white'
-    }
+    colors: {
+      orange: 'orange',
+      white: 'white',
+      black: 'black',
+    },
   },
   variants: {
     extend: {},

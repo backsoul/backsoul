@@ -1,0 +1,167 @@
+$font-size-root: 16px;
+$body-font-family: 'Airbnb Cereal App', sans-serif;
+$font-heading: 'Airbnb Cereal App', sans-serif;
+$font-text: 'Airbnb Cereal App', sans-serif;
+
+$color-gris: #c0acac;
+$color-dorado: rgb(255, 223, 158);
+$color-violeta: rgb(52, 49, 72);
+$color-naranja: rgb(255, 157, 0);
+$color-primary-darken: #00d0eb;
+$color-corporativo: #008bbf;
+$color-ecommerce: #28253c;
+$color-personal: #ff9d00;
+$color-ecommerce-darken: #c98600;
+$color-ecommerce-lighten: #ffdf9e;
+$color-corporativo-darken: #005a7b;
+$color-corporativo-lighten: #1bd3f8;
+$color-restaurantes: #ff4b4b;
+$colol-personal-darken: #b45502;
+$color-azul-dark: rgb(0, 90, 123);
+$color-azul: #008bbf;
+$color-naranja-dark: rgb(223, 112, 0);
+$color-violeta-dark: rgb(28, 25, 49);
+$color-azul-darken: rgb(0, 45, 62);
+$color-dorado-dark: rgb(201, 134, 0);
+$color-naranja-darken: rgb(180, 85, 2);
+$color-rojo-dark: rgb(200, 0, 11);
+
+/* New Colors */
+$color-citix-primary: #00d0eb;
+$color-citix-secondary: #ff9d00;
+$color-citix-grey: #808080;
+$color-citix-grey-light: #f5fbff;
+$color-citix-blue: #2d4e60;
+$color-citix-blue-light: #9db5c2;
+$color-white-ice: #edf7fc;
+$color-rojo: rgb(253, 57, 68);
+$color-catskill-white: #e3eef3;
+$color-nepal: #9db5c2;
+
+$restaurantes-gradient: linear-gradient(180deg, #ff3a44 0%, #c31162 100%);
+$personal-gradient: linear-gradient(180deg, #ffaa00 0%, #ff8000 100%);
+$ecommerce-gradient: linear-gradient(
+  180deg,
+  rgba(114, 107, 165, 1) 35%,
+  rgba(45, 39, 85, 1) 100%
+);
+$corporativo-gradient: linear-gradient(to bottom, #005a7b, #002d3e);
+$aliado-gradient: linear-gradient(to top, #00d0eb 0%, #008bbf 100%);
+$aliado-gradient-tablet: linear-gradient(180deg, #00d0eb 0%, #008bbf 100%);
+
+// New Colors
+$tw-grey: #b8c2cc;
+$grey-light: #dae1e7;
+$white: #fff;
+$black: #22292f;
+$nepal: #9db5c2;
+$san-juan: #2d4e60;
+$mystic: #d7e2e8;
+$slate-gray: #728895;
+$link-water: #e8f2f9;
+
+// Lite variables
+$content-color: $san-juan;
+$theme-background: #f8f8f8;
+$font-size-base: 16px;
+
+$blue-citix-gradient: linear-gradient(
+  180deg,
+  #00a0ff 0%,
+  #00a1ff 1%,
+  #00d0eb 100%
+);
+$primary: #00d0eb;
+$secondary: #ff9d00;
+$white-citix: #ffffff;
+$white-citix-dark: #f6f6f6;
+$blue-citix: #00d0eb;
+$error: rgb(237, 79, 70);
+$success: rgb(77, 225, 135);
+$info: rgb(84, 168, 254);
+$blue-citix-soft: rgba(0, 208, 235, 0.34);
+$info-soft: rgba(84, 168, 254, 0.34);
+$success-soft: rgba(77, 225, 135, 0.34);
+$error-soft: rgba(237, 79, 70, 0.34);
+$orange-citix: #ff9d00;
+$orange-citix-soft: rgba(255, 157, 0, 0.34);
+/* Size */
+$size-xl: 55px;
+$size-l: 34px;
+$size-m: 21px;
+$size-s: 16px;
+$size-xs: 14px;
+
+/* Weight */
+$weight-bold: 900;
+$weight-medium: 700;
+$weight-normal: 400;
+$weight-light: 300;
+
+$opacity-disabled: 0.5;
+$height-footer: 64px;
+$tappable-square: 44px;
+$duration-quickly: 0.08s;
+$duration-slowly: 0.5s;
+$z-index-modal: 9999;
+$z-index-sticky: 100;
+
+//Media Query
+$media-query-xs: 'screen and (max-width : 600px)';
+$media-query-sm: 'screen and (min-width: 600px) and (max-width: 960px)';
+$media-query-md: 'screen and (min-width: 960px) and (max-width: 1264px)';
+$media-query-lg: 'screen and (min-width: 1264px) and (max-width: 1904)';
+$media-query-xl: 'screen and (min-width : 1904)';
+
+/* Shadows */
+$shadow-xl: 0 34px 89px rgba(0, 0, 0, 0.08);
+$shadow-l: 0px 21px 55px 0px rgba(0, 0, 0, 0.08);
+$shadow-m: 0px 13px 34px 0px rgba(0, 0, 0, 0.08);
+$shadow-s: 0px 8px 21px 0px rgba(0, 0, 0, 0.08);
+$shadow-xs: 0 0 89px rgba(0, 0, 0, 0.13);
+$shadow-default: 0px 5px 21px 0px rgba(0, 0, 0, 0.05);
+
+/* Spacing */
+$spacing-xl: 2px;
+$spacing-l: 1px;
+$spacing-m: 0;
+$spacing-s: -0.5px;
+$spacing-xs: -1px;
+
+/* Radius */
+$radius-default: 8px;
+$radius-button: 50px;
+$radius-card: 89px;
+$radius-circle: 50%;
+$radius-l: 34px;
+$radius-m: 21px;
+$radius-s: 13px;
+
+$radius-rectangle: 40px 40px 0 0;
+
+/* Space */
+$space-xxl: 144px;
+$space-xl: 89px;
+$space-l: 55px;
+$space-m: 34px;
+$space-s: 21px;
+$space-xs: 13px;
+$space-xxs: 5px;
+
+$line-height-xxxl: 144px;
+$line-height-xxl: 99px;
+$line-height-xl: 59px;
+$line-height-l: 38px;
+$line-height-m: 25px;
+$line-height-s: 20px;
+$line-height-xs: 20px;
+$spacing-ratio: 1.7;
+
+* {
+  letter-spacing: 0 !important;
+}
+.theme--light.v-application {
+  font-family: 'Airbnb Cereal App', sans-serif;
+  background: #ffffff !important;
+  color: $color-citix-grey;
+}

@@ -1,14 +1,13 @@
 <template>
   <div class="flex flex-col justify-center">
-      <Welcome />
+    <Welcome />
   </div>
 </template>
 
 <script>
 import '~/assets/icons'
 
-export default {
-}
+export default {}
 </script>
 
 <style></style>
