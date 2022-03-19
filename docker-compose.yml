@@ -7,8 +7,8 @@ services:
     volumes:
       - /var/run/docker.sock:/tmp/docker.sock:ro
     environment:
-      - VIRTUAL_HOST=backsoul.com.co
+      - VIRTUAL_HOST=www.backsoul.com.co
       - VIRTUAL_PORT=8080
-      - LETSENCRYPT_HOST=backsoul.com.co
+      - LETSENCRYPT_HOST=www.backsoul.com.co
       - LETSENCRYPT_EMAIL=danielsarmientoenterprise@gmail.com
 
