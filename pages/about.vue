@@ -87,7 +87,7 @@
     height: 20rem;
     object-fit: cover;">
       <div>
-        <h2 class="text-shf font-bold">Copower QR</h2>
+        <h2 class="text-shf font-bold">Copower QR - FullStack Developer</h2>
 
       <p class="text-citix_text" style="font-size: .8rem;">
         Copower QR es una aplicacion web que permite la generacion de codigos QR y generacion de reportes de
@@ -100,24 +100,31 @@
 
     <div  class="flex items-center justify-between gap-60">
         <div>
-        <h2 class="text-shf font-bold">Microservicios</h2>
+        <h2 class="text-shf font-bold">Microservicios -  Backend Developer</h2>
 
       <p class="text-citix_text" style="font-size: .8rem;">Cuando las aplicaciones crecen los requerimiento y consumo tambien, cree microservicios para funciones en especificas, sms,gateway,etc.
         <br />
         Golang,express,django,aws,docker y firebase (sms push notification). son unas de las tecnologias que uso en el desarrollo de estos microservicios.
       </p>
       </div>
-      <img src="../assets/img/shf/shf-aprendizaje.png" alt="" style="width: 30rem;">
+      <img src="../assets/img/microservice.png" alt="" style="width: 30rem;">
     </div>
 
-    <div>
-          <h2 class="text-odoo_text font-bold">Impacto</h2>
-          <p class="text-citix_text my-2" style="font-size: .8rem;">Desarrolle modulos para empresas de ingenieria como</p>
-          <InfiniteEnterpriseCarousel
-          :images="shf_images"
-          class="infinite-enterprise"
-        />
-        </div>
+    <div  class="flex items-center justify-between gap-60">
+      <img src="../assets/img/shf/copower-qr.png" alt="" style="width: 20rem;
+    border-radius: 50%;
+    height: 20rem;
+    object-fit: cover;">
+      <div>
+        <h2 class="text-shf font-bold">Creditodo / Prestafacil - FullStack Developer</h2>
+
+      <p class="text-citix_text" style="font-size: .8rem;">
+        Mantenimiento de aplicaciones ya existentes. Agregue nuevas features.
+        <br />
+       Tecnologías: Angular,Ionic, Laravel y Linux.
+      </p>
+      </div>
+    </div>
   </div>
 
 
