@@ -4,8 +4,8 @@ services:
   backsoul_web:
     container_name: backsoul_web
     build: .
-    volumes:
-      - /var/run/docker.sock:/tmp/docker.sock:ro
+    # volumes:
+    #   - /var/run/docker.sock:/tmp/docker.sock:ro
     environment:
       - VIRTUAL_HOST=www.backsoul.xyz
       - VIRTUAL_PORT=8080
