@@ -4,9 +4,6 @@
       <NuxtLink to="/about" class="hover:text-orange hover:cursor-pointer"
         >Sobre mi</NuxtLink
       >
-      <NuxtLink to="/contact" class="hover:text-orange hover:cursor-pointer"
-        >Contactame</NuxtLink
-      >
       <a
         href="https://backsoul-doc.web.app/"
         class="hover:text-orange hover:cursor-pointer"

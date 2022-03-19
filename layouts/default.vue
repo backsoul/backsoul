@@ -5,8 +5,8 @@
         <Header />
         <Nuxt />
       </div>
-      <div class="w-screen bg-black text-white flex justify-center">
-        Backsoul
+      <div class="w-screen  text-citix_gray flex justify-center mt-20">
+        <a href="https://github.com/backsoul" class="text-citix_gray ">@Backsoul</a>
       </div>
     </div>
   </div>

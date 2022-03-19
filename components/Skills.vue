@@ -9,8 +9,7 @@
           informado de los últimos pinceles. Dejando a un lado las metáforas, Me
           considero una persona con un aprendizaje constante me divierte
           aprender nuevas tecnologías por eso mi stack tech creció. Pero está
-          claro que aprender de todo y no especializarse esta mal, por eso mis
-          fuertes son:
+          claro que aprender de todo y no especializarse esta mal.
         </p>
       </div>
     </div>
