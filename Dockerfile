@@ -1,19 +1,31 @@
-FROM node:16-alpine3.11 as build
+FROM node:lts as builder
 
-RUN mkdir -p /web
-WORKDIR /web
-RUN apk update && apk upgrade
-RUN apk add git
-COPY package.json yarn.lock   ./web/
-RUN yarn install
-COPY .  /web/
+WORKDIR /app
+
+COPY . .
+
+RUN yarn install \
+  --prefer-offline \
+  --frozen-lockfile \
+  --non-interactive \
+  --production=false
+
 RUN yarn build
 
+RUN rm -rf node_modules && \
+  NODE_ENV=production yarn install \
+  --prefer-offline \
+  --pure-lockfile \
+  --non-interactive \
+  --production=true
 
-# production environment
-FROM nginx:1.16.0-alpine
-COPY --from=build /web/dist /usr/share/nginx/html
-RUN rm /etc/nginx/conf.d/default.conf
-COPY nginx/nginx.conf /etc/nginx/conf.d
+FROM node:lts
+
+WORKDIR /app
+
+COPY --from=builder /app  .
+
+ENV HOST 0.0.0.0
 EXPOSE 80
-CMD ["nginx", "-g", "daemon off;"]
+
+CMD [ "yarn", "start" ]
