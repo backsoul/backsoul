@@ -3,11 +3,11 @@ FROM node:16-alpine3.11 as build
 RUN mkdir -p /web
 WORKDIR /web
 RUN apk update && apk upgrade
-RUN apk add git 
+RUN apk add git
 COPY package.json yarn.lock   ./web/
 RUN yarn install
 COPY .  /web/
-RUN yarn build 
+RUN yarn build
 
 
 # production environment

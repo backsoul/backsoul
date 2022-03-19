@@ -8,11 +8,7 @@ services:
       - /var/run/docker.sock:/tmp/docker.sock:ro
     environment:
       - VIRTUAL_HOST=backsoul.com.co
-
-  nginx-proxy:
-    image: jwilder/nginx-proxy
-    ports:
-      - "80:80"
-    volumes:
-      - /var/run/docker.sock:/tmp/docker.sock:ro
+      - VIRTUAL_PORT=80
+      - LETSENCRYPT_HOST=backsoul.com.co
+      - LETSENCRYPT_EMAIL=danielsarmientoenterprise@gmail.com
 
