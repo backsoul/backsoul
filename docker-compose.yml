@@ -7,7 +7,7 @@ services:
     volumes:
       - /var/run/docker.sock:/tmp/docker.sock:ro
     ports:
-      - "3000:3000"
+      - 3000
     environment:
       - VIRTUAL_HOST=www.backsoul.xyz
       - VIRUTAL_POST=3000
