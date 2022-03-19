@@ -1,5 +1,127 @@
 <template>
   <div class="text-center mt-20">
+    <!-- CITIX -->
+    <div class="my-10">
+      <h1 class="text-citix_gray font-bold my-10">Citix Colombia - FullStack Developer</h1>
+      <div class="flex items-center justify-between gap-60">
+      <img src="../assets/img/citix-phone.png" alt="" style="width: 20rem;">
+      <div>
+        <h2 class="text-citix_gray font-bold">Explicación,visión y roles.</h2>
+      <p class="text-citix_text" style="font-size: .8rem;">
+        Citix Colombia es una plataforma de domicilios y mensajeria en Bucaramanga y el area metropolitana, Mis funciones eran de FullStack developer Angular,Laravel y Ionic.
+        Estuve desde el inicio tanto en la planeacion del proyecto,desarrollo y entrega al cliente final.
+        <br />
+        Citix Colombia es un sistema escalable enfocado a microservicios, igualmente se usaron tecnologias salientes como graphql,nestjs,capacitor y apollo. las anteriores no son todas
+        pero da a entender la idea de que el sistema es escalable y se puede usar en cualquier plataforma.
+        </p>
+      </div>
+      </div>
+
+      <div  class="flex items-center justify-between gap-60">
+        <div>
+          <h2 class="text-citix_gray font-bold">Proceso de crecimiento</h2>
+          <p class="text-citix_text" style="font-size: .8rem;">Citix colombia me permitio aprender nuevas tecnologias ademas no casarme con un framework ni lenguaje ademas de esto empleamos scrum master para el desarrollo agil (Scrums,Daily Scrum Meeting,Sprints Weeks), agradecimiento a Sebastian Manrique que hizo parte del aprendizaje y capacitacion.
+            Actualmente me llena de sactifacion el enfoque que le dimos y su futuro.
+          </p>
+        </div>
+          <img src="../assets/img/citix-brand.png" alt="" style="width: 20rem;">
+      </div>
+
+        <div>
+          <h2 class="text-citix_gray font-bold">Impacto</h2>
+          <p class="text-citix_text my-2" style="font-size: .8rem;">Citix colombia actualmente cuenta con importantes clientes tales como</p>
+          <InfiniteEnterpriseCarousel
+          :images="citix_images"
+          class="infinite-enterprise"
+        />
+        </div>
+    </div>
+    <!-- ODOO SHF -->
+  <div class="my-10">
+    <h2 style="border: 0px solid rgb(226, 232, 240);
+    line-height: 1;
+    position: relative;
+    top: 0px;" class="text-odoo_text my-10">Odoo Developer</h2>
+     <div  class="flex items-center justify-between gap-60">
+      <img src="../assets/img/shf/computer-shf.png" alt="" style="width: 30rem;">
+      <div>
+        <h2 class="text-odoo_text font-bold">Explicación,visión y roles.</h2>
+
+      <p class="text-citix_text" style="font-size: .8rem;">Odoo es un framework enfocado a modulos en este caso de contabilidad y firmas de ingenieria.
+        <br />
+        Actualmente desarrollo modulos de contabilidad,nomina y facturacion electronica. Incluso a peticion del cliente
+        se desarrollan modulos con compatibilidad con otros frameworks por ejemplo angular,ionic y react.
+      </p>
+      </div>
+    </div>
+
+    <div  class="flex items-center justify-between gap-60">
+        <div>
+        <h2 class="text-odoo_text font-bold">Proceso de crecimiento.</h2>
+
+      <p class="text-citix_text" style="font-size: .8rem;">Odoo me permitio reforzar conocimientos en relaciones de base de datos,pensamiento
+        modular,tratamiento de datos delicados,insercion de requerimientos del cliente,nuevo modelo de desarrollo (tickets).
+      </p>
+      </div>
+      <img src="../assets/img/shf/shf-aprendizaje.png" alt="" style="width: 30rem;">
+    </div>
+
+    <div>
+          <h2 class="text-odoo_text font-bold">Impacto</h2>
+          <p class="text-citix_text my-2" style="font-size: .8rem;">Desarrolle modulos para empresas de ingenieria como</p>
+          <InfiniteEnterpriseCarousel
+          :images="shf_images"
+          class="infinite-enterprise"
+        />
+        </div>
+  </div>
+
+  <div class="my-10">
+    <h2 style="border: 0px solid rgb(226, 232, 240);
+    line-height: 1;
+    position: relative;
+    top: 0px;" class="text-shf my-10">Productos independientes por clientes</h2>
+     <div  class="flex items-center justify-between gap-60">
+      <img src="../assets/img/shf/copower-qr.png" alt="" style="width: 20rem;
+    border-radius: 50%;
+    height: 20rem;
+    object-fit: cover;">
+      <div>
+        <h2 class="text-shf font-bold">Copower QR</h2>
+
+      <p class="text-citix_text" style="font-size: .8rem;">
+        Copower QR es una aplicacion web que permite la generacion de codigos QR y generacion de reportes de
+        codigos QR.
+        <br />
+        La aplicacion se desarrollo en el framework de Nuxtjs.
+      </p>
+      </div>
+    </div>
+
+    <div  class="flex items-center justify-between gap-60">
+        <div>
+        <h2 class="text-shf font-bold">Microservicios</h2>
+
+      <p class="text-citix_text" style="font-size: .8rem;">Cuando las aplicaciones crecen los requerimiento y consumo tambien, cree microservicios para funciones en especificas, sms,gateway,etc.
+        <br />
+        Golang,express,django,aws,docker y firebase (sms push notification). son unas de las tecnologias que uso en el desarrollo de estos microservicios.
+      </p>
+      </div>
+      <img src="../assets/img/shf/shf-aprendizaje.png" alt="" style="width: 30rem;">
+    </div>
+
+    <div>
+          <h2 class="text-odoo_text font-bold">Impacto</h2>
+          <p class="text-citix_text my-2" style="font-size: .8rem;">Desarrolle modulos para empresas de ingenieria como</p>
+          <InfiniteEnterpriseCarousel
+          :images="shf_images"
+          class="infinite-enterprise"
+        />
+        </div>
+  </div>
+
+
+  <div>
     <h1>Tecnologías de uso diario</h1>
     <div class="grid grid-cols-7 item-center gap-7 mt-10">
       <a href="https://angular.io/" target="_blank">
@@ -280,43 +402,6 @@
         ></svgicon>
       </a>
     </div>
-
-    <h1>Proyectos Desarrollados (SHF)</h1>
-
-    <div>
-      <h1>Citix Colombia - FullStack Developer</h1>
-      <div class="flex items-center justify-between">
-      <img src="../assets/img/citix-phone.png" alt="">
-      <div>
-        <h2 class="text-citix_gray font-bold">Explicación,visión y roles.</h2>
-      <p>
-        Citix Colombia es una plataforma de domicilios y mensajeria en Bucaramanga y el area metropolitana, Mis funciones eran de FullStack developer Angular,Laravel y Ionic.
-        Estuve desde el inicio tanto en la planeacion del proyecto,desarrollo y entrega al cliente final.
-        <br />
-        Citix Colombia es un sistema escalable enfocado a microservicios, igualmente se usaron tecnologias salientes como graphql,nestjs,capacitor y apollo. las anteriores no son todas
-        pero da a entender la idea de que el sistema es escalable y se puede usar en cualquier plataforma.
-        </p>
-      </div>
-      </div>
-
-      <div  class="flex items-center justify-between">
-        <div>
-          <h2>Un proceso de aprendizaje</h2>
-          <p>Citix colombia me permitio aprender nuevas tecnologias ademas no casarme con un framework ni lenguaje, agradecimiento a Sebastian Manrique que hizo parte del aprendizaje y capacitacion.
-            Actualmente me llena de sactifacion el enfoque que le dimos y su futuro.
-          </p>
-        </div>
-          <img src="../assets/img/citix-brand.png" alt="">
-      </div>
-
-        <div>
-          <h2>Impacto</h2>
-          <p>Citix colombia actualmente cuenta con importantes clientes tales como:</p>
-          <InfiniteEnterpriseCarousel
-          :items="images"
-          class="infinite-enterprise"
-        />
-        </div>
     </div>
   </div>
 </template>
@@ -336,16 +421,22 @@ body{
 
 <script>
 export default {
-  data() {
+  data(){
     return {
-      corporativos:[
-        require('@/assets/img/corporativos/don-jacobo.png'),
-        require('@/assets/img/corporativos/nevada.png'),
-        require('@/assets/img/corporativos/pinche-perro.png'),
-        require('@/assets/img/corporativos/brownies-broche.png'),
-        require('@/assets/img/corporativos/para-tu-rincon.png'),
-        require('@/assets/img/corporativos/jarris.png'),
-      ]
+      citix_images:[
+          require('@/assets/img/corporativos/don-jacobo.png'),
+          require('@/assets/img/corporativos/nevada.png'),
+          require('@/assets/img/corporativos/pinche-perro.png'),
+          require('@/assets/img/corporativos/brownies-broche.png'),
+          require('@/assets/img/corporativos/para-tu-rincon.png'),
+          require('@/assets/img/corporativos/jarris.png'),
+      ],
+      shf_images:[
+          require('@/assets/img/corporativos/copower.png'),
+          require('@/assets/img/corporativos/cts.png'),
+          require('@/assets/img/corporativos/proymelec.jpeg'),
+          require('@/assets/img/corporativos/elektra.jpeg')
+      ],
     }
   }
 }

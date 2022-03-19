@@ -83,16 +83,10 @@
 
 <script>
 export default {
-  data() {
-    return {
-      images:[
-          require('@/assets/img/corporativos/don-jacobo.png'),
-          require('@/assets/img/corporativos/nevada.png'),
-          require('@/assets/img/corporativos/pinche-perro.png'),
-          require('@/assets/img/corporativos/brownies-broche.png'),
-          require('@/assets/img/corporativos/para-tu-rincon.png'),
-          require('@/assets/img/corporativos/jarris.png'),
-      ]
+  props: {
+    images: {
+      type: Array,
+      required: true
     }
   }
 }
