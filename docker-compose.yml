@@ -1,8 +1,8 @@
 version: "3"
 
 services:
-  web:
-    container_name: web_nuxt
+  backsoul_web:
+    container_name: backsoul_web
     build: .
     volumes:
       - /var/run/docker.sock:/tmp/docker.sock:ro
