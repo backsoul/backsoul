@@ -285,7 +285,10 @@
 
     <div>
       <h1>Citix Colombia - FullStack Developer</h1>
+      <div class="flex items-center justify-between">
       <img src="../assets/img/citix-phone.png" alt="">
+      <div>
+        <h2 class="text-citix_gray font-bold">Explicación,visión y roles.</h2>
       <p>
         Citix Colombia es una plataforma de domicilios y mensajeria en Bucaramanga y el area metropolitana, Mis funciones eran de FullStack developer Angular,Laravel y Ionic.
         Estuve desde el inicio tanto en la planeacion del proyecto,desarrollo y entrega al cliente final.
@@ -293,13 +296,18 @@
         Citix Colombia es un sistema escalable enfocado a microservicios, igualmente se usaron tecnologias salientes como graphql,nestjs,capacitor y apollo. las anteriores no son todas
         pero da a entender la idea de que el sistema es escalable y se puede usar en cualquier plataforma.
         </p>
-          <img src="../assets/img/citix-brand.png" alt="">
+      </div>
+      </div>
+
+      <div  class="flex items-center justify-between">
         <div>
           <h2>Un proceso de aprendizaje</h2>
           <p>Citix colombia me permitio aprender nuevas tecnologias ademas no casarme con un framework ni lenguaje, agradecimiento a Sebastian Manrique que hizo parte del aprendizaje y capacitacion.
             Actualmente me llena de sactifacion el enfoque que le dimos y su futuro.
           </p>
         </div>
+          <img src="../assets/img/citix-brand.png" alt="">
+      </div>
 
         <div>
           <h2>Impacto</h2>
@@ -319,6 +327,10 @@
     margin-top: 108px;
     margin-bottom: 108px;
   }
+}
+
+body{
+  font-family: Airbnb Cereal App,Georgia,Cambria,Times New Roman,Times,serif;
 }
 </style>
 
