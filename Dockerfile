@@ -10,7 +10,7 @@ RUN yarn install \
   --non-interactive \
   --production=false
 
-RUN yarn build
+RUN yarn generate
 
 RUN rm -rf node_modules && \
   NODE_ENV=production yarn install \
