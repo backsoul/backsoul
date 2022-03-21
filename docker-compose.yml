@@ -9,10 +9,10 @@ services:
     ports:
       - 3000
     environment:
-      - VIRTUAL_HOST=www.backsoul.xyz
-      - VIRUTAL_POST=3000
-      - LETSENCRYPT_HOST=www.backsoul.xyz
-      - LETSENCRYPT_EMAIL=danielsarmientoenterprise@gmail.com
+      VIRTUAL_HOST: www.backsoul.xyz
+      VIRUTAL_POST: 3000
+      LETSENCRYPT_HOST: www.backsoul.xyz
+      LETSENCRYPT_EMAIL: danielsarmientoenterprise@gmail.com
     networks:
       - web
 networks:
