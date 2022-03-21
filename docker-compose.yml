@@ -12,7 +12,7 @@ services:
       NODE_ENV: production
       TZ: America/Bogota
       VIRTUAL_HOST: www.backsoul.xyz
-      VIRTUAL_PORT: 4020
+      VIRTUAL_PORT: 3000
       LETSENCRYPT_HOST: www.backsoul.xyz
       LETSENCRYPT_EMAIL: principal@shf.com.co
     networks:
