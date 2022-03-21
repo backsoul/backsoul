@@ -1,21 +1,20 @@
-version: "3"
-
+version: '3'
 services:
-  backsoul_web:
-    container_name: backsoul_web
+  backsoul-front:
     build: .
+    restart: always
+    container_name: backsoul-front
     volumes:
       - /var/run/docker.sock:/tmp/docker.sock:ro
-    ports:
-      - 3000
     environment:
+      NODE_ENV: production
+      TZ: America/Bogota
       VIRTUAL_HOST: www.backsoul.xyz
-      VIRUTAL_POST: 3000
+      VIRTUAL_PORT: 3000
       LETSENCRYPT_HOST: www.backsoul.xyz
-      LETSENCRYPT_EMAIL: danielsarmientoenterprise@gmail.com
+      LETSENCRYPT_EMAIL: principal@shf.com.co
     networks:
       - web
 networks:
   web:
     external: true
-
