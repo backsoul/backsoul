@@ -4,13 +4,15 @@ services:
     build: .
     restart: always
     container_name: backsoul-front
+    ports:
+      - 3000
     volumes:
       - /var/run/docker.sock:/tmp/docker.sock:ro
     environment:
       NODE_ENV: production
       TZ: America/Bogota
       VIRTUAL_HOST: www.backsoul.xyz
-      VIRTUAL_PORT: 3000
+      VIRTUAL_PORT: 4020
       LETSENCRYPT_HOST: www.backsoul.xyz
       LETSENCRYPT_EMAIL: principal@shf.com.co
     networks:
