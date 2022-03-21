@@ -40,6 +40,7 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    '@nuxtjs/gtm'
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -49,5 +50,10 @@ export default {
   build: {},
   router: {
     base: '/'
+  },
+  gtm:{
+    id: 'GTM-PWX8DBC',
+    pageTracking: true,
+    dev: false
   }
 }
