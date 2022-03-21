@@ -7,6 +7,7 @@ services:
     ports:
       - 3000
     volumes:
+      - .:/chat
       - /var/run/docker.sock:/tmp/docker.sock:ro
     environment:
       NODE_ENV: production

@@ -1,29 +1,16 @@
-FROM node:15-alpine
-
-RUN apk add g++ make python
+FROM node:16.8-alpine3.11
 
 # Create app directory
-WORKDIR /app
+WORKDIR /chat
+ADD . /chat/
 
-COPY package*.json .
-
-COPY yarn.lock .
-
-RUN yarn install
-
-COPY . .
-
-ENV NODE_ENV=production
-
+# global install & update
+RUN rm yarn.lock
+RUN yarn
 RUN yarn build
 
+ENV HOST 0.0.0.0
 EXPOSE 3000
 
-# set app serving to permissive / assigned
-ENV NUXT_HOST=0.0.0.0
-# set app port
-
-ENV NUXT_PORT=3000
-
 # start command
-CMD yarn start
+CMD [ "yarn", "start" ]
