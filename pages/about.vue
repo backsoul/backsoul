@@ -452,6 +452,26 @@ export default {
           require('@/assets/img/corporativos/elektra.jpeg')
       ],
     }
+  },
+  head() {
+    return {
+      title: this.title,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Bienvenidos a mi sitio web'
+        },
+      ]
+    }
+  },
+  mounted() {
+    // Evento personalizado para hacer el seguimiento de los virtual pageviews -->
+    window.dataLayer.push({
+      event: 'virtualPageview',
+      virtualPageURL: this.$router.currentRoute.path,
+      virtualPageTitle: this.title,
+    });
   }
 }
 </script>
