@@ -3,27 +3,19 @@
     <div class=" h-screen flex justify-between items-center">
       <div>
         <h1 class="font-bold text-4xl text-welcome">Welcome enthusiastic!</h1>
-        <p class="text-2xl">Daniel Sarmiento FullStack developer.</p>
+        <p class="text-2xl text-white">Daniel Sarmiento FullStack developer.</p>
         <div class="mt-2 grid grid-cols-2 w-2/12 gap-5">
-          <a href="https://twitter.com/backsoul_" target="_blank">
-            <svgicon
-              name="twitter"
-              width="30"
-              color="#fffff"
-              class="fill-current hover:text-orange"
-            ></svgicon>
-          </a>
           <a href="https://github.com/backsoul" target="_blank">
             <svgicon
               name="github"
               width="30"
               color="#fffff"
-              class="fill-current hover:text-orange"
+              class="fill-current hover:text-orange text-white"
             ></svgicon>
           </a>
         </div>
       </div>
-      <img :src="require(`~/assets/img/character-intro.png`)" class="image" />
+      <img :src="require(`~/assets/img/character.png`)" class="image" />
     </div>
     <Skills />
   </div>
@@ -35,6 +27,7 @@ export default {}
 
 <style>
 .text-welcome {
+  color: white;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: 0.15em solid orange; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
@@ -64,6 +57,8 @@ export default {}
 
 .image {
   animation: float 5s infinite;
+  border-radius: 50%;
+      width: 35rem;
 }
 
 @keyframes float {
