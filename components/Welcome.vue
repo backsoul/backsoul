@@ -1,6 +1,6 @@
 <template>
-  <div class="justify-between items-center">
-    <div class=" h-screen flex justify-between items-center">
+  <div class="justify-between items-center" style="position: relative; z-index: 2">
+    <div class="h-screen flex justify-between items-center">
       <div>
         <h1 class="font-bold text-4xl text-welcome">Welcome enthusiastic!</h1>
         <p class="text-2xl text-white">Daniel Sarmiento FullStack developer.</p>
@@ -13,16 +13,209 @@
               class="fill-current hover:text-orange text-white"
             ></svgicon>
           </a>
+          <a href="https://www.linkedin.com/in/danielstevensarmiento/" target="_blank">
+            <svgicon
+              name="linkedin"
+              width="30"
+              color="#fffff"
+              class="fill-current hover:text-orange text-white"
+            ></svgicon>
+          </a>
         </div>
       </div>
-      <img :src="require(`~/assets/img/character.png`)" class="image" />
+      <!-- <img :src="require(`~/assets/img/character.png`)" class="image" /> -->
     </div>
-    <Skills />
+    <div>
+      <Skills />
+      <Experience />
+      <Products />
+      <div class="mt-32">
+        <h1 class="flex justify-center text-white m-10 font-semibold">
+          Tecnologías que uso durante la semana
+        </h1>
+        <div class="grid grid-cols-7 item-center gap-7 mt-12">
+          <a href="https://angular.io/" target="_blank">
+            <svgicon
+              name="angular"
+              width="50"
+              color="#fffff"
+              class="fill-current hover:text-orange hover:-translate-y-2 transform duration-500"
+            ></svgicon>
+          </a>
+          <a href="https://nuxtjs.org/" class="mt-2" target="_blank">
+            <svgicon
+              name="nuxt"
+              width="60"
+              color="#fffff"
+              class="fill-current hover:text-orange hover:-translate-y-2 transform duration-500"
+            ></svgicon>
+          </a>
+          <a href="https://ionicframework.com/" target="_blank">
+            <svgicon
+              name="ionic"
+              width="60"
+              color="#fffff"
+              class="fill-current hover:text-orange hover:-translate-y-2 transform duration-500"
+            ></svgicon>
+          </a>
+          <a href="https://www.typescriptlang.org/" target="_blank">
+            <svgicon
+              name="typescript"
+              width="60"
+              color="#fffff"
+              class="fill-current hover:text-orange hover:-translate-y-2 transform duration-500"
+            ></svgicon>
+          </a>
+          <a href="https://laravel.com/" target="_blank">
+            <svgicon
+              name="laravel"
+              width="60"
+              color="#fffff"
+              class="fill-current hover:text-orange hover:-translate-y-2 transform duration-500"
+            ></svgicon>
+          </a>
+          <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank">
+            <svgicon
+              name="javascript"
+              width="60"
+              color="#fffff"
+              class="fill-current hover:text-orange hover:-translate-y-2 transform duration-500"
+            ></svgicon>
+          </a>
+          <a href="https://www.python.org/" target="_blank">
+            <svgicon
+              name="python"
+              width="60"
+              color="#fffff"
+              class="fill-current hover:text-orange hover:-translate-y-2 transform duration-500"
+            ></svgicon>
+          </a>
+
+          <a href="https://go.dev/" target="_blank">
+            <svgicon
+              name="golang"
+              width="60"
+              color="#fffff"
+              class="fill-current hover:text-orange hover:-translate-y-2 transform duration-500"
+            ></svgicon>
+          </a>
+          <a href="https://www.rabbitmq.com/" target="_blank">
+            <svgicon
+              name="rabbitmq"
+              width="60"
+              color="#fffff"
+              class="fill-current hover:text-orange hover:-translate-y-2 transform duration-500"
+            ></svgicon>
+          </a>
+          <a href="https://www.github.com/" target="_blank">
+            <svgicon
+              name="github"
+              width="60"
+              color="#fffff"
+              class="fill-current hover:text-orange hover:-translate-y-2 transform duration-500"
+            ></svgicon>
+          </a>
+          <a href="https://www.docker.com" target="_blank">
+            <svgicon
+              name="docker"
+              width="60"
+              color="#fffff"
+              class="fill-current hover:text-orange hover:-translate-y-2 transform duration-500"
+            ></svgicon>
+          </a>
+          <a href="https://www.nginx.com/" target="_blank">
+            <svgicon
+              name="nginx"
+              width="60"
+              color="#fffff"
+              class="fill-current hover:text-orange hover:-translate-y-2 transform duration-500"
+            ></svgicon>
+          </a>
+          <a href="https://www.linux.org/" target="_blank">
+            <svgicon
+              name="linux"
+              width="60"
+              color="#fffff"
+              class="fill-current hover:text-orange hover:-translate-y-2 transform duration-500"
+            ></svgicon>
+          </a>
+          <a href="https://www.atlassian.com/es/software/jira" target="_blank">
+            <svgicon
+              name="jira"
+              width="60"
+              color="#fffff"
+              class="fill-current hover:text-orange hover:-translate-y-2 transform duration-500"
+            ></svgicon>
+          </a>
+          <a href="https://git-scm.com/" target="_blank">
+            <svgicon
+              name="git"
+              width="60"
+              color="#fffff"
+              class="fill-current hover:text-orange hover:-translate-y-2 transform duration-500"
+            ></svgicon>
+          </a>
+          <a href="https://www.digitalocean.com/" target="_blank">
+            <svgicon
+              name="digitalocean"
+              width="60"
+              color="#fffff"
+              class="fill-current hover:text-orange hover:-translate-y-2 transform duration-500"
+            ></svgicon>
+          </a>
+          <a href="https://aws.amazon.com/es/" target="_blank">
+            <svgicon
+              name="aws"
+              width="60"
+              color="#fffff"
+              class="fill-current hover:text-orange hover:-translate-y-2 transform duration-500"
+            ></svgicon>
+          </a>
+          <a href="https://www.djangoproject.com/" target="_blank">
+            <svgicon
+              name="django"
+              width="60"
+              color="#fffff"
+              class="fill-current hover:text-orange hover:-translate-y-2 transform duration-500"
+            ></svgicon>
+          </a>
+          <a href="https://nodejs.org/es/" target="_blank">
+            <svgicon
+              name="node"
+              width="60"
+              color="#fffff"
+              class="fill-current hover:text-orange hover:-translate-y-2 transform duration-500"
+            ></svgicon>
+          </a>
+          <a href="https://www.cloudflare.com/es-es/" target="_blank">
+            <svgicon
+              name="cloudflare"
+              width="60"
+              color="#fffff"
+              class="fill-current hover:text-orange hover:-translate-y-2 transform duration-500"
+            ></svgicon>
+          </a>
+          <a href="https://www.odoo.com/" target="_blank">
+            <svgicon
+              name="odoo"
+              width="60"
+              color="#fffff"
+              class="fill-current hover:text-orange hover:-translate-y-2 transform duration-500"
+            ></svgicon>
+          </a>
+        </div>
+      </div>
+      <Sellers />
+    </div>
   </div>
 </template>
 
 <script>
-export default {}
+import Experience from "./Experience.vue";
+import Sellers from "./Sellers.vue";
+import Products from "./Products.vue";
+
+export default { components: { Experience, Sellers, Products } };
 </script>
 
 <style>
@@ -58,7 +251,7 @@ export default {}
 .image {
   animation: float 5s infinite;
   border-radius: 50%;
-      width: 35rem;
+  width: 35rem;
 }
 
 @keyframes float {
