@@ -44,7 +44,8 @@
                     Django, Docker, Traefik, escalado de AWS, Rabbitmq, Odoo ERP, Grafana,
                     CI, CD. Uso de github actions para la gestión de acciones en los
                     servidores para despliegue en producción. Apoyo a los desarrolladores
-                    en las áreas de Angular, Python, vanilla JavaScript, Linux y Docker.
+                    en las áreas de Angular, Python,Typescript, vanilla JavaScript, Linux
+                    y Docker.
                   </p>
                 </div>
               </div>

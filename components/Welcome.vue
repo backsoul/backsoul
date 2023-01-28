@@ -4,7 +4,7 @@
       <div>
         <h1 class="font-bold text-4xl text-welcome">Welcome enthusiastic!</h1>
         <p class="text-2xl text-white">Daniel Sarmiento FullStack developer.</p>
-        <div class="mt-2 grid grid-cols-2 w-2/12 gap-5">
+        <div class="mt-2 grid grid-cols-3 w-3/12 gap-5">
           <a href="https://github.com/backsoul" target="_blank">
             <svgicon
               name="github"
@@ -21,9 +21,23 @@
               class="fill-current hover:text-orange text-white"
             ></svgicon>
           </a>
+          <a href="https://danielsarmientodeveloper.medium.com/" target="_blank">
+            <svgicon
+              name="medium"
+              width="30"
+              color="#fffff"
+              class="fill-current hover:text-orange text-white"
+            ></svgicon>
+          </a>
         </div>
       </div>
-      <!-- <img :src="require(`~/assets/img/character.png`)" class="image" /> -->
+    </div>
+    <div style="display: flex; justify-content: center; margin-top: -7rem">
+      <img
+        :src="require(`~/assets/img/scrolldown.gif`)"
+        class="image"
+        style="position: relative; z-index: 2; width: 7rem"
+      />
     </div>
     <div>
       <Skills />

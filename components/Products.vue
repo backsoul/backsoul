@@ -3,12 +3,12 @@
     <h1 class="flex justify-center text-white m-10 font-semibold">Products</h1>
     <!-- CITIX -->
     <div class="flex text-white justify-center">
-      <div>
+      <div style="width: 40rem">
         <div>
           <h2 style="font-size: 2rem">Citix</h2>
           <div style="font-size: 0.8rem">
             <p>
-              Desarrolle el producto desde su idea hasta su deploy actualmente esta
+              Desarrolle el producto desde su idea hasta su deploy actualmente esta <br />
               facturando este a su vez posee de diferentes modelos negocios.
             </p>
             <a
@@ -85,7 +85,7 @@
     </div>
     <!-- SHF -->
     <div class="flex text-white mt-20 justify-center">
-      <div>
+      <div style="width: 40rem">
         <div>
           <h2 style="font-size: 2rem">SHF</h2>
           <div style="font-size: 0.8rem">
@@ -165,14 +165,13 @@
     </div>
     <!-- DAFITI -->
     <div class="flex text-white mt-20 justify-center">
-      <div>
+      <div style="width: 40rem">
         <div>
           <h2 style="font-size: 2rem">Dafiti</h2>
           <div style="font-size: 0.8rem">
             <p>
               Desarrollo nuevas implementaciones de gran impacto hacia las ventas ademas
-              de brindar soporte <br />
-              con los diferentes clientes e integradores de la marca.
+              de brindar soporte con los diferentes clientes e integradores de la marca.
             </p>
             <a
               href="https://www.dafiti.com.co/"
