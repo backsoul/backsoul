@@ -8,15 +8,32 @@ export default {
     htmlAttrs: {
       lang: 'es',
     },
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' },
+    meta: [{
+        charset: 'utf-8'
+      },
+      {
+        name: 'viewport',
+        content: 'width=device-width, initial-scale=1'
+      },
+      {
+        hid: 'description',
+        name: 'description',
+        content: ''
+      },
+      {
+        name: 'format-detection',
+        content: 'telephone=no'
+      },
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { href: "https://fonts.googleapis.com/css2?family=Open+Sans&display=swap", rel: "stylesheet" }
+    link: [{
+        rel: 'icon',
+        type: 'image/x-icon',
+        href: '/favicon.ico'
+      },
+      {
+        href: "https://fonts.googleapis.com/css2?family=Open+Sans&display=swap",
+        rel: "stylesheet"
+      }
 
     ],
   },
@@ -25,7 +42,12 @@ export default {
   css: ['~/assets/scss/main.scss'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [{ src: '~plugins/vuesax.js' }, { src: '~/plugins/vue-iconsvg.js', mode: 'client' },],
+  plugins: [{
+    src: '~plugins/vuesax.js'
+  }, {
+    src: '~/plugins/vue-iconsvg.js',
+    mode: 'client'
+  }, ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -40,7 +62,21 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
-    '@nuxtjs/gtm'
+    '@nuxtjs/gtm',
+    [
+      '@nuxtjs/firebase',
+      {
+        config: {
+          apiKey: "AIzaSyAQy6AFXFLWSQu4WrRhOr5DMswWklgFyO0",
+          authDomain: "backsoul-87f48.firebaseapp.com",
+          projectId: "backsoul-87f48",
+          storageBucket: "backsoul-87f48.appspot.com",
+          messagingSenderId: "941012190951",
+          appId: "1:941012190951:web:3f4d9383f095113afc4442",
+          measurementId: "G-C1HHZBPDM8"
+        }
+      }
+    ]
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -51,7 +87,7 @@ export default {
   router: {
     base: '/'
   },
-  gtm:{
+  gtm: {
     id: 'GTM-PWX8DBC',
     pageTracking: true,
     dev: false
