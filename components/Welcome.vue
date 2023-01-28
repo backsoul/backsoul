@@ -2,9 +2,9 @@
   <div class="justify-between items-center" style="position: relative; z-index: 2">
     <div class="h-screen flex justify-between items-center">
       <div>
-        <h1 class="font-bold text-4xl text-welcome">Welcome enthusiastic!</h1>
+        <h1 class="font-bold text-sm md:text-4xl text-welcome">Welcome enthusiastic!</h1>
         <p class="text-2xl text-white">Daniel Sarmiento FullStack developer.</p>
-        <div class="mt-2 grid grid-cols-3 w-3/12 gap-5">
+        <div class="mt-2 grid grid-cols-3 w-3/12 gap-10">
           <a href="https://github.com/backsoul" target="_blank">
             <svgicon
               name="github"
@@ -42,12 +42,13 @@
     <div>
       <Skills />
       <Experience />
+
       <Products />
       <div class="mt-32">
-        <h1 class="flex justify-center text-white m-10 font-semibold">
+        <h1 class="font-bold text-xl text-orange text-center">
           Tecnologías que uso durante la semana
         </h1>
-        <div class="grid grid-cols-7 item-center gap-7 mt-12">
+        <div class="grid grid-cols-4 md:grid-cols-7 item-center gap-7 mt-12">
           <a href="https://angular.io/" target="_blank">
             <svgicon
               name="angular"

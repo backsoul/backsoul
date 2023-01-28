@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="text-white text-center mt-20 font-semibold">
+    <h1 class="font-bold text-lg text-white text-center mt-20">
       Desarrollos implementados en los siguientes sellers
     </h1>
     <div class="slider">
@@ -66,6 +66,10 @@
 <style lang="scss">
 .image-sellers {
   height: 100%;
+  filter: grayscale(1);
+}
+.image-sellers:hover {
+  filter: brightness(2);
 }
 @mixin white-gradient {
   background: linear-gradient(to right, #171717 0%, rgba(255, 255, 255, 0) 100%);
